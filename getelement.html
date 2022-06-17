@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Expressions</h2>
+
+<p>Enter Name to Welcome him.</p>
+<input type="text" id="name" placeholder="Ente Your Name:">
+<button onclick="welcome()">Enter</button>
+
+<p id="demo"></p>
+
+<script>
+function welcome(){
+
+var name= document.getElementById('name').value;
+document.getElementById("demo").innerHTML = "Well Come! Dear " + name  + ", Hope You are fine & enjoying your life.";
+}
+
+</script>
+
+</body>
+</html>
