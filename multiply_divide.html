@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply_Divide By Talhas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script>
+        function multiplyBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = 'Answer is : '+(num1 * num2).toFixed(2);
+        }
+
+        function divideBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = 'Answer is : '+( num1 / num2).toFixed(2);
+        }
+
+    </script>
+
+
+
+    <div class="container  mt-5 mx-auto" style="width: 400px;">
+        <div class="row">
+            <h2>Multiply-Divide Methods</h2>
+            <div class="card bg-dark  text-white">
+                <div class="card-body " style="width: 400px;">
+
+                    Enter 1st Number: <input type="text" class="mt-5" id="firstNumber"><br>
+                    Enter 2nd Number: <input type="text" class="mt-5" id="secondNumber"><br>
+                    <button class="ms-5" onclick="multiplyBy()"> Multiply</button>
+                    <button class="ms-5 mt-5" onclick="divideBy()">Divide</button>
+                    
+
+                    <p class="text-center mt-5" id="result"></p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
