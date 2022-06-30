@@ -11,20 +11,21 @@
 <body>
 
 
-    <input type="button" onclick="location.href='index.html'" value=" Home " />
-
+    
     <!--  Join Array Elements by * -->
 
 
 
     <div class="container  mt-5 mx-auto" style="width: 400px;">
         <div class="row">
+            <input class="btn btn-primary mx-auto"  type="button" onclick="location.href='index.html'" value=" Home " />
+
             <h2>Arrays Method Practice</h2>
             <div class="card bg-dark  text-white">
-                <div class="card-body "style="width: 400px;">
+                <div class="card-body " style="width: 400px;">
                     <p id="1"></p>
 
-                    <button onclick="joinby()">Join This Array By *</button>
+                    <button class="btn btn-primary"  onclick="joinby()">Join This Array By *</button>
 
                     <p id="2"></p>
 
@@ -49,19 +50,19 @@
             <div class="card bg-dark  text-white">
                 <div class="card-body " style="width: 400px;">
 
-    <h2>PUSH Method in Arrays</h2>
-    <p>Before Push:</p>
-    <p id="3"></p>
-    <button onclick="push()">PUSH</button>
-    <p>After Push:</p>
-    <p id="4"></p>
-    <script>
-        document.getElementById("3").innerHTML = fruits;
-        function push() {
-            fruits.push("Kiwi");
-            document.getElementById("4").innerHTML = fruits;
-        };
-    </script>
+                    <h2>PUSH Method in Arrays</h2>
+                    <p>Before Push:</p>
+                    <p id="3"></p>
+                    <button class="btn btn-primary"  onclick="push()">PUSH</button>
+                    <p>After Push:</p>
+                    <p id="4"></p>
+                    <script>
+                        document.getElementById("3").innerHTML = fruits;
+                        function push() {
+                            fruits.push("Kiwi");
+                            document.getElementById("4").innerHTML = fruits;
+                        };
+                    </script>
 
                 </div>
             </div>
@@ -78,24 +79,24 @@
             <div class="card bg-dark  text-white">
                 <div class="card-body " style="width: 400px;">
 
-    <h2>SHIFT Method in Array</h2>
-    <button onclick="shift()"> SHIFT </button>
-    <p id="5"></p>
-    <p id="6"></p>
-    <p id="7"></p>
-    <p id="8"></p>
+                    <h2>SHIFT Method in Array</h2>
+                    <button class="btn btn-primary"  onclick="shift()"> SHIFT </button>
+                    <p id="5"></p>
+                    <p id="6"></p>
+                    <p id="7"></p>
+                    <p id="8"></p>
 
-    <script>
-        function shift() {
-            document.getElementById("5").innerHTML = fruits;
-            fruits.shift();
-            document.getElementById("6").innerHTML = fruits;
-            fruits.shift();
-            document.getElementById("7").innerHTML = fruits;
-            fruits.shift();
-            document.getElementById("8").innerHTML = fruits;
-        };
-    </script>
+                    <script>
+                        function shift() {
+                            document.getElementById("5").innerHTML = fruits;
+                            fruits.shift();
+                            document.getElementById("6").innerHTML = fruits;
+                            fruits.shift();
+                            document.getElementById("7").innerHTML = fruits;
+                            fruits.shift();
+                            document.getElementById("8").innerHTML = fruits;
+                        };
+                    </script>
                 </div>
             </div>
         </div>
@@ -114,24 +115,24 @@
             <div class="card bg-dark  text-white">
                 <div class="card-body " style="width: 400px;">
 
-    <h2 class="">Concat Merging two Arrays</h2>
-    <p>Array#1: <span id="9"></span></p>
-    <p>Array#2: <span id="10"></span></p>
-    <button onclick="concat()">CONCAT</button>
-    <h2>After Concat:</h2>
-    <p id="11"></p>
+                    <h2 class="">Concat Merging two Arrays</h2>
+                    <p>Array#1: <span id="9"></span></p>
+                    <p>Array#2: <span id="10"></span></p>
+                    <button class="btn btn-primary"  onclick="concat()">CONCAT</button>
+                    <h2>After Concat:</h2>
+                    <p id="11"></p>
 
-    <script>
-        const first = ["A1", "A2"];
-        const second = ["B1", "B2", "B3"];
-        document.getElementById("9").innerHTML = first;
-        document.getElementById("10").innerHTML = second;
-        function concat() {
-            const all = first.concat(second);
+                    <script>
+                        const first = ["A1", "A2"];
+                        const second = ["B1", "B2", "B3"];
+                        document.getElementById("9").innerHTML = first;
+                        document.getElementById("10").innerHTML = second;
+                        function concat() {
+                            const all = first.concat(second);
 
-            document.getElementById("11").innerHTML = all;
-        };
-    </script>
+                            document.getElementById("11").innerHTML = all;
+                        };
+                    </script>
                 </div>
             </div>
         </div>
@@ -148,25 +149,25 @@
                 <div class="card-body" style="width: 400px;">
 
 
-    <button onclick="myFunction1()">Sort Alphabetically</button>
-    <button onclick="myFunction2()">Sort Numerically</button>
+                    <button class="btn btn-primary"  onclick="myFunction1()">Sort Alphabetically</button>
+                    <button class="btn btn-primary"  onclick="myFunction2()">Sort Numerically</button>
 
-    <p id="sort"></p>
+                    <p id="sort"></p>
 
-    <script>
-        const points = [40, 100, 1, 5, 25, 10];
-        document.getElementById("sort").innerHTML = points;
+                    <script>
+                        const points = [40, 100, 1, 5, 25, 10];
+                        document.getElementById("sort").innerHTML = points;
 
-        function myFunction1() {
-            points.sort();
-            document.getElementById("sort").innerHTML = points;
-        }
+                        function myFunction1() {
+                            points.sort();
+                            document.getElementById("sort").innerHTML = points;
+                        }
 
-        function myFunction2() {
-            points.sort(function (a, b) { return a - b });
-            document.getElementById("sort").innerHTML = points;
-        }
-    </script>
+                        function myFunction2() {
+                            points.sort(function (a, b) { return a - b });
+                            document.getElementById("sort").innerHTML = points;
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -174,7 +175,52 @@
     <!-- //SORT -->
 
 
+    <div class="container  mt-5 mx-auto" style="width:400px;">
+    <div class="row">
+        <div class="card bg-dark  text-white">
+            <div class="card-body" style="width: 400px;">
+                <input id="getNewElement" type="text">
 
+                <button class="btn btn-primary" onclick="pushElement()">PUSH</button>
+
+                <p id="printArray"></p>
+
+                <input id="checkElement" type="text">
+
+                <button class="btn btn-primary" onclick="checkElement()"> CHECK in Array </button>
+
+                <p id="checkArray"></p>
+
+
+
+                <script>
+                    var array = ["1","2","3"]
+                    document.getElementById("printArray").innerHTML = array;
+                    function pushElement() {
+                        var push = document.getElementById("getNewElement").value;
+                        array.push(push);
+                        document.getElementById("printArray").innerHTML = array;
+                    };
+
+                    function checkElement(){
+                        var check = document.getElementById("checkElement").value;
+
+                       document.getElementById("checkArray").innerHTML= array.includes(check);
+
+                    }
+
+
+
+                   
+                </script>
+
+
+
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
