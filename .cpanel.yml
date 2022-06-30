@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user//
+    - export DEPLOYPATH=/home/zenuaysh/junaid.nftgift.beauty/
     - /bin/cp index.html $DEPLOYPATH
  
