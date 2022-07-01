@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+
+        function ucFirst(str) {
+
+
+            return str[0].toUpperCase() + str.slice(1);
+        }
+
+        alert(ucFirst("talha"));
+
+
+        function checkSpam(str) {
+            let lowerStr = str.toLowerCase();
+
+            return lowerStr.includes('ugly') || lowerStr.includes('bad');
+        }
+
+        alert(checkSpam('You look bad'));
+        alert(checkSpam('he is ugly student'));
+        alert(checkSpam("Peace be upon him!"));
+
+
+
+
+
+        function extractCurrencyValue(str) {
+            return str.slice(1)
+           
+        }
+
+
+        alert(extractCurrencyValue("$3,999"));
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
