@@ -11,21 +11,21 @@
 <body>
 
 
-    
+
     <!--  Join Array Elements by * -->
 
 
 
     <div class="container  mt-5 mx-auto" style="width: 400px;">
         <div class="row">
-            <input class="btn btn-primary mx-auto"  type="button" onclick="location.href='index.html'" value=" Home " />
+            <input class="btn btn-primary mx-auto" type="button" onclick="location.href='index.html'" value=" Home " />
 
             <h2>Arrays Method Practice</h2>
             <div class="card bg-dark  text-white">
                 <div class="card-body " style="width: 400px;">
                     <p id="1"></p>
 
-                    <button class="btn btn-primary"  onclick="joinby()">Join This Array By *</button>
+                    <button class="btn btn-primary" onclick="joinby()">Join This Array By *</button>
 
                     <p id="2"></p>
 
@@ -53,7 +53,7 @@
                     <h2>PUSH Method in Arrays</h2>
                     <p>Before Push:</p>
                     <p id="3"></p>
-                    <button class="btn btn-primary"  onclick="push()">PUSH</button>
+                    <button class="btn btn-primary" onclick="push()">PUSH</button>
                     <p>After Push:</p>
                     <p id="4"></p>
                     <script>
@@ -80,7 +80,7 @@
                 <div class="card-body " style="width: 400px;">
 
                     <h2>SHIFT Method in Array</h2>
-                    <button class="btn btn-primary"  onclick="shift()"> SHIFT </button>
+                    <button class="btn btn-primary" onclick="shift()"> SHIFT </button>
                     <p id="5"></p>
                     <p id="6"></p>
                     <p id="7"></p>
@@ -118,7 +118,7 @@
                     <h2 class="">Concat Merging two Arrays</h2>
                     <p>Array#1: <span id="9"></span></p>
                     <p>Array#2: <span id="10"></span></p>
-                    <button class="btn btn-primary"  onclick="concat()">CONCAT</button>
+                    <button class="btn btn-primary" onclick="concat()">CONCAT</button>
                     <h2>After Concat:</h2>
                     <p id="11"></p>
 
@@ -149,8 +149,8 @@
                 <div class="card-body" style="width: 400px;">
 
 
-                    <button class="btn btn-primary"  onclick="myFunction1()">Sort Alphabetically</button>
-                    <button class="btn btn-primary"  onclick="myFunction2()">Sort Numerically</button>
+                    <button class="btn btn-primary" onclick="myFunction1()">Sort Alphabetically</button>
+                    <button class="btn btn-primary" onclick="myFunction2()">Sort Numerically</button>
 
                     <p id="sort"></p>
 
@@ -176,53 +176,82 @@
 
 
     <div class="container  mt-5 mx-auto" style="width:400px;">
-    <div class="row">
-        <div class="card bg-dark  text-white">
-            <div class="card-body" style="width: 400px;">
-                <input id="getNewElement" type="text">
+        <div class="row">
+            <div class="card bg-dark  text-white">
+                <div class="card-body" style="width: 400px;">
+                    <input id="getNewElement" type="text">
 
-                <button class="btn btn-primary" onclick="pushElement()">PUSH</button>
+                    <button class="btn btn-primary" onclick="pushElement()">PUSH</button>
 
-                <p id="printArray"></p>
+                    <p id="printArray"></p>
 
-                <input id="checkElement" type="text">
+                    <input id="checkElement" type="text">
 
-                <button class="btn btn-primary" onclick="checkElement()"> CHECK in Array </button>
+                    <button class="btn btn-primary" onclick="checkElement()"> CHECK in Array </button>
 
-                <p id="checkArray"></p>
+                    <p id="checkArray"></p>
 
 
 
-                <script>
-                    var array = ["1","2","3"]
-                    document.getElementById("printArray").innerHTML = array;
-                    function pushElement() {
-                        var push = document.getElementById("getNewElement").value;
-                        array.push(push);
+                    <script>
+                        var array = ["1", "2", "3"]
                         document.getElementById("printArray").innerHTML = array;
-                    };
+                        function pushElement() {
+                            var push = document.getElementById("getNewElement").value;
+                            array.push(push);
+                            document.getElementById("printArray").innerHTML = array;
+                        };
 
-                    function checkElement(){
-                        var check = document.getElementById("checkElement").value;
+                        function checkElement() {
+                            var check = document.getElementById("checkElement").value;
 
-                       document.getElementById("checkArray").innerHTML= array.includes(check);
+                            document.getElementById("checkArray").innerHTML = array.includes(check);
 
-                    }
+                        }
 
-
-
-                   
-                </script>
+                    </script>
 
 
 
-                </script>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
+    <div class="container  mt-5 mx-auto" style="width:400px;">
+        <div class="row">
+            <div class="card bg-dark  text-white">
+                <div class="card-body" style="width: 400px;">
+
+
+                    <p id="arr1Print"></p>
+                    <p id="arr2Print"></p>
+
+                    <button class="btn btn-primary" onclick="max()"> Max </button>
+
+                    <p id="maxPrint"></p>
+
+
+                    <script>
+
+                        let arr1 = [1, -2, 3, 4];
+                        let arr2 = [8, 3, -8, 990];
+
+                        document.getElementById("arr1Print").innerHTML = " Array#1 " + arr1;
+                        document.getElementById("arr2Print").innerHTML = " Array#2 " + arr2;
+
+                        function max() {
+
+                            document.getElementById("maxPrint").innerHTML = Math.max(...arr1, ...arr2)
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

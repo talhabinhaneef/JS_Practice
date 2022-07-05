@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Apply </title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+
+        function delay(f, ms) {
+
+            return function () {
+                setTimeout(() => f.apply(this, arguments), ms);
+            };
+
+        }
+
+        let f1000 = delay(alert, 4000);
+
+        alert("Next Alert will appear after 4 Seconds.")
+
+        f1000("This Alert is 4 seconds Late."); 
+    </script>
+
+</body>
+
+</html>
