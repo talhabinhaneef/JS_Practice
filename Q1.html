@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#1</title>
+</head>
+<script>
+    list=[1,3,34,65,68,67,34,2,320,21,2,21,5,34,56,76,34,29]
+    function check(){
+        inRange=[];
+        notInRange=[];
+        for(let i=0;i<list.length;i++){
+            if(list[i]>49 && list[i]<188){
+                inRange.push(list[i])   
+            }
+            else{
+                notInRange.push(list[i])
+            }
+        }
+        console.log("In Range: ", inRange);
+        console.log("Not in Range: ", notInRange);
+    }
+    check();
+</script>
+<body>
+    
+</body>
+</html>

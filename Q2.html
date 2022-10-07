@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#2</title>
+</head>
+<script>
+    function charCount(str, letter) {
+        var letterCount = 0;
+        for (var index = 0; index < str.length; index++) 
+        {
+        if (str.charAt(index) == letter) 
+            {
+                letterCount ++;
+            }
+       }
+    const object={
+    [letter]:letterCount
+}
+
+  const jsonObj= JSON.stringify(object)
+  return jsonObj;
+ 
+}
+
+console.log(charCount('fvgbhunjmkctrybumertfyguhrdftgyhinuybtvrcexwzkkk', 'g'));
+</script>
+<body>
+    
+</body>
+</html>
